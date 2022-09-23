@@ -20,9 +20,6 @@ const HomePage = () => {
               <Link href="">Home</Link>
             </li>
             <li>
-              <Link href="">About us</Link>
-            </li>
-            <li>
               <Link href="">Features</Link>
             </li>
             <li>
@@ -72,16 +69,35 @@ const HomePage = () => {
               </div>
             </div>
             <div className={classes["box-1-of-2"]}>
-              <div className={classes["hero-image"]}>
-                
-              </div>
+              <div className={classes["hero-image"]}></div>
             </div>
           </div>
         </div>
       </header>
       <section className={classes["section-about-us"]}>
         <div className={classes["box-con"]}>
-            <h2 className={classes["heading-secondary"]}>About Us</h2>
+          <h2 className={classes["heading-secondary"]}>Features</h2>
+          <p className={classes["heading-secondary-sub"]}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            veniam.
+          </p>
+          <div className={classes["box-feature"]}>
+            <div className={classes["box-1-of-3"]}>
+                <div className={classes["feature-box"]}>
+                    A
+                </div>
+            </div>
+            <div className={classes["box-1-of-3"]}>
+                <div className={classes["feature-box"]}>
+                    B
+                </div>
+            </div>
+            <div className={classes["box-1-of-3"]}>
+                <div className={classes["feature-box"]}>
+                    C
+                </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>

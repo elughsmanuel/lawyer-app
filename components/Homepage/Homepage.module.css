@@ -196,4 +196,29 @@
 .heading-secondary {
     font-size: 3rem;
     color: #40196D;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.heading-secondary-sub {
+    font-size: 1.5rem;
+    color: #000;
+    letter-spacing: 1px;
+    margin-bottom: 5rem;
+}
+
+.box-feature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1-of-3 {
+    flex-basis: 32%;
+}
+
+.feature-box {
+    width: 100%;
+    height: 15rem;
+    background-color: #FFCCB3;
 }
