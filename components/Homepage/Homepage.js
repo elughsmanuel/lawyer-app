@@ -79,6 +79,11 @@ const HomePage = () => {
           </div>
         </div>
       </header>
+      <section className={classes["section-about-us"]}>
+        <div className={classes["box-con"]}>
+            <h2 className={classes["heading-secondary"]}>About Us</h2>
+        </div>
+      </section>
     </Layout>
   );
 };

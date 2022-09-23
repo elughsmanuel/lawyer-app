@@ -182,3 +182,18 @@
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
 }
+
+.section-about-us {
+    width: 100%;
+    padding: 8rem 0;
+}
+
+.box-con {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    color: #40196D;
+}
