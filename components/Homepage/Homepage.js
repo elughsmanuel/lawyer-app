@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo from "../../assets/logo.png";
+import featureOne from "../../assets/feature-1.png";
+import featureTwo from "../../assets/feature-2.png";
+import featureThree from "../../assets/feature-3.png";
+
 import Layout from "../Layout/Layout";
 import classes from "./Homepage.module.css";
 
@@ -74,30 +78,68 @@ const HomePage = () => {
           </div>
         </div>
       </header>
-      <section className={classes["section-about-us"]}>
+      <section className={classes["section"]}>
         <div className={classes["box-con"]}>
           <h2 className={classes["heading-secondary"]}>Features</h2>
           <p className={classes["heading-secondary-sub"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            veniam.
+            The most advanced language model to create distinctive and
+            human-like copy in seconds
           </p>
           <div className={classes["box-feature"]}>
             <div className={classes["box-1-of-3"]}>
-                <div className={classes["feature-box"]}>
-                    A
+              <div className={classes["feature-box"]}>
+                <div className={classes["feature-image"]}>
+                  <Image src={featureOne} alt="feature image" />
                 </div>
+              </div>
+              <div className={classes["feature-text"]}>
+                <h3>
+                  <i className="fa-solid fa-toolbox"></i>Notes to Summary
+                </h3>
+                <p>Turn meeting notes into a summary</p>
+              </div>
             </div>
             <div className={classes["box-1-of-3"]}>
-                <div className={classes["feature-box"]}>
-                    B
+              <div className={classes["feature-box"]}>
+                <div className={classes["feature-image"]}>
+                  <Image src={featureTwo} alt="feature image" />
                 </div>
+              </div>
+              <div className={classes["feature-text"]}>
+                <h3>
+                  <i className="fa-solid fa-trowel-bricks"></i>Interview
+                  Questions
+                </h3>
+                <p>Create interview questions</p>
+              </div>
             </div>
             <div className={classes["box-1-of-3"]}>
-                <div className={classes["feature-box"]}>
-                    C
+              <div className={classes["feature-box"]}>
+                <div className={classes["feature-image"]}>
+                  <Image src={featureThree} alt="feature image" />
                 </div>
+              </div>
+              <div className={classes["feature-text"]}>
+                <h3>
+                  <i className="fa-solid fa-key"></i>Keywords
+                </h3>
+                <p>Extract keywords from a block of text</p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={classes["section"]}>
+        <div className={classes["box-con"]}>
+          <h2 className={classes["heading-secondary"]}>How It Works</h2>
+          <p className={classes["heading-secondary-sub"]}>
+            Use this to save hours of work and in 3 simple steps, begin writing
+            here
+          </p>
+        </div>
+        <div className={classes["box-works"]}>
+          <div className={classes["box-1-of-2-w"]}>A</div>
+          <div className={classes["box-1-of-2-w"]}>B</div>
         </div>
       </section>
     </Layout>
