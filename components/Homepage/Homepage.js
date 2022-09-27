@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo from "../../assets/logo.png";
+import hero from "../../assets/hero.svg";
 import featureOne from "../../assets/feature-1.png";
 import featureTwo from "../../assets/feature-2.png";
 import featureThree from "../../assets/feature-3.png";
+import howItWorks from "../../assets/how-it-works.svg";
 
 import Layout from "../Layout/Layout";
 import classes from "./Homepage.module.css";
@@ -73,7 +75,11 @@ const HomePage = () => {
               </div>
             </div>
             <div className={classes["box-1-of-2"]}>
-              <div className={classes["hero-image"]}></div>
+              <div className={classes["hero-image"]}>
+                <div className={classes["hero-image-con"]}>
+                  <Image src={hero} alt="hero image" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -138,8 +144,44 @@ const HomePage = () => {
           </p>
         </div>
         <div className={classes["box-works"]}>
-          <div className={classes["box-1-of-2-w"]}>A</div>
-          <div className={classes["box-1-of-2-w"]}>B</div>
+          <div className={classes["box-1-of-2-w"]}>
+            <div className={classes["how-it-works-image"]}>
+              <div className={classes["how-it-works-image-con"]}>
+                <Image src={howItWorks} alt="How it works image" />
+              </div>
+            </div>
+          </div>
+          <div className={classes["box-1-of-2-w"]}>
+            <div className={classes["how-it-works-box-con"]}>
+                <div className={classes["how-it-works-box"]}>
+                    <div className={classes["box-1-of-3-h"]}>
+                        <h1>1</h1>
+                    </div>
+                    <div className={classes["box-2-of-3-h"]}>
+                        <h3>Select a writing tool</h3>
+                        <p>Select from a variety of tools to writings, articles, and blog entries.</p>
+                    </div>
+                </div>
+                <div className={classes["how-it-works-box"]}>
+                    <div className={classes["box-1-of-3-h"]}>
+                        <h1>2</h1>
+                    </div>
+                    <div className={classes["box-2-of-3-h"]}>
+                        <h3>Fill in your details</h3>
+                        <p>Explain as much detail as possible what you want to write about.</p>
+                    </div>
+                </div>
+                <div className={classes["how-it-works-box"]}>
+                    <div className={classes["box-1-of-3-h"]}>
+                        <h1>3</h1>
+                    </div>
+                    <div className={classes["box-2-of-3-h"]}>
+                        <h3>Generate your content</h3>
+                        <p>In seconds, our highly trained tools analyze your details and generates original and human-like content.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
