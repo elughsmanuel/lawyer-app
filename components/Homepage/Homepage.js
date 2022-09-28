@@ -153,33 +153,122 @@ const HomePage = () => {
           </div>
           <div className={classes["box-1-of-2-w"]}>
             <div className={classes["how-it-works-box-con"]}>
-                <div className={classes["how-it-works-box"]}>
-                    <div className={classes["box-1-of-3-h"]}>
-                        <h1>1</h1>
-                    </div>
-                    <div className={classes["box-2-of-3-h"]}>
-                        <h3>Select a writing tool</h3>
-                        <p>Select from a variety of tools to writings, articles, and blog entries.</p>
-                    </div>
+              <div className={classes["how-it-works-box"]}>
+                <div className={classes["box-1-of-3-h"]}>
+                  <h1>1</h1>
                 </div>
-                <div className={classes["how-it-works-box"]}>
-                    <div className={classes["box-1-of-3-h"]}>
-                        <h1>2</h1>
-                    </div>
-                    <div className={classes["box-2-of-3-h"]}>
-                        <h3>Fill in your details</h3>
-                        <p>Explain as much detail as possible what you want to write about.</p>
-                    </div>
+                <div className={classes["box-2-of-3-h"]}>
+                  <h3>Select a writing tool</h3>
+                  <p>
+                    Select from a variety of tools to writings, articles, and
+                    blog entries.
+                  </p>
                 </div>
-                <div className={classes["how-it-works-box"]}>
-                    <div className={classes["box-1-of-3-h"]}>
-                        <h1>3</h1>
-                    </div>
-                    <div className={classes["box-2-of-3-h"]}>
-                        <h3>Generate your content</h3>
-                        <p>In seconds, our highly trained tools analyze your details and generates original and human-like content.</p>
-                    </div>
+              </div>
+              <div className={classes["how-it-works-box"]}>
+                <div className={classes["box-1-of-3-h"]}>
+                  <h1>2</h1>
                 </div>
+                <div className={classes["box-2-of-3-h"]}>
+                  <h3>Fill in your details</h3>
+                  <p>
+                    Explain as much detail as possible what you want to write
+                    about.
+                  </p>
+                </div>
+              </div>
+              <div className={classes["how-it-works-box"]}>
+                <div className={classes["box-1-of-3-h"]}>
+                  <h1>3</h1>
+                </div>
+                <div className={classes["box-2-of-3-h"]}>
+                  <h3>Generate your content</h3>
+                  <p>
+                    In seconds, our highly trained tools analyze your details
+                    and generates original and human-like content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={classes["section"]}>
+        <div className={classes["box-con"]}>
+          <h2 className={classes["heading-secondary"]}>Pricing</h2>
+          <p className={classes["heading-secondary-sub"]}>
+            Our plans are straightforward and open, depending on the number of
+            tools.
+          </p>
+          <div className={classes["box-pricing"]}>
+            <div className={classes["box-1-of-3-pricing"]}>
+              <i className="fa-solid fa-user"></i>
+              <h2>Personal</h2>
+              <p>Perfect plan for starters</p>
+              <h1>
+                $0<span>/year</span>
+              </h1>
+              <button>Try BETA</button>
+              <ul>
+                <li>
+                  <i className="fa-solid fa-check"></i>Unlimited projects
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Share with 5 team members
+                </li>
+              </ul>
+            </div>
+            <div className={classes["box-1-of-3-pricing"]}>
+              <i className="fa-solid fa-user-plus"></i>
+              <h2>Professional</h2>
+              <p>For users who want to do more</p>
+              <h1>
+                $19<span>/year</span>
+              </h1>
+              <button>Try BETA</button>
+              <ul>
+                <li>
+                  <i className="fa-solid fa-check"></i>Unlimited projects
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Share with 5 team members
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Advanced security
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Sharing permission
+                </li>
+              </ul>
+            </div>
+            <div className={classes["box-1-of-3-pricing"]}>
+              <i className="fa-solid fa-users"></i>
+              <h2>Team</h2>
+              <p>Your entire team in one place</p>
+              <h1>
+                $49<span>/year</span>
+              </h1>
+              <button>Try BETA</button>
+              <ul>
+                <li>
+                  <i className="fa-solid fa-check"></i>Unlimited projects
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Share with 5 team members
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Advanced security
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Sharing permission
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Collaborative workspace
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>Admin tools
+                </li>
+              </ul>
             </div>
           </div>
         </div>
