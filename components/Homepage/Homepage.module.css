@@ -379,7 +379,7 @@
     padding: 1.5rem;
     background-color: #40196d;
     border: none;
-    border-radius: 3rem;
+    border-radius: 5px;
     cursor: pointer;
     margin-bottom: 3rem;
     transition: all 1s;
@@ -387,6 +387,7 @@
 
 .box-1-of-3-pricing button:hover {
     background-color: #2b1049;
+    transform: translateY(-10%);
 }
 
 .box-1-of-3-pricing ul {

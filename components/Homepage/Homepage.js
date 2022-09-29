@@ -26,13 +26,13 @@ const HomePage = () => {
               <Link href="">Home</Link>
             </li>
             <li>
-              <Link href="">Features</Link>
+              <Link href="#features">Features</Link>
             </li>
             <li>
-              <Link href="">How it works</Link>
+              <Link href="#how-it-works">How it works</Link>
             </li>
             <li>
-              <Link href="">Pricing</Link>
+              <Link href="#pricing">Pricing</Link>
             </li>
           </ul>
           <ul>
@@ -84,7 +84,7 @@ const HomePage = () => {
           </div>
         </div>
       </header>
-      <section className={classes["section"]}>
+      <section className={classes["section"]} id="features">
         <div className={classes["box-con"]}>
           <h2 className={classes["heading-secondary"]}>Features</h2>
           <p className={classes["heading-secondary-sub"]}>
@@ -135,7 +135,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className={classes["section"]}>
+      <section className={classes["section"]} id="how-it-works">
         <div className={classes["box-con"]}>
           <h2 className={classes["heading-secondary"]}>How It Works</h2>
           <p className={classes["heading-secondary-sub"]}>
@@ -193,7 +193,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className={classes["section"]}>
+      <section className={classes["section"]} id="pricing">
         <div className={classes["box-con"]}>
           <h2 className={classes["heading-secondary"]}>Pricing</h2>
           <p className={classes["heading-secondary-sub"]}>
