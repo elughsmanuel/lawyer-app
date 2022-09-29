@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo from "../../assets/logo.png";
+import logoFooter from "../../assets/logo-footer.png";
 import hero from "../../assets/hero.svg";
 import featureOne from "../../assets/feature-1.png";
 import featureTwo from "../../assets/feature-2.png";
@@ -273,6 +274,51 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <footer className={classes["footer"]}>
+      <div className={classes["logo-footer-box"]}>
+              <a href="">
+                <Image src={logoFooter} alt="logo footer" />
+              </a>
+            </div>
+        <div className={classes["box-footer"]}>
+          <div className={classes["box-1-of-4-footer"]}>
+            <h2>Save time. Get motivated.</h2>
+            <p className={classes["long-copy"]}>
+              In seconds, you can generate contents, writings and material.
+              Utilize the most advanced tool writer to increase traffic and
+              productivity.
+            </p>
+            <p className={classes["copyright"]}>
+              &#169; 2022 Lawyer Up. All rights reserved.
+            </p>
+          </div>
+          <div className={classes["box-1-of-4-footer"]}>
+            <h3>Use Cases</h3>
+            <ul>
+                <li><a href="">Notes to Summary</a></li>
+                <li><a href="">Interview Questions</a></li>
+                <li><a href="">Keywords</a></li>
+            </ul>
+          </div>
+          <div className={classes["box-1-of-4-footer"]}>
+            <h3>About</h3>
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">How It Works</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div className={classes["box-1-of-4-footer"]}>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </Layout>
   );
 };
