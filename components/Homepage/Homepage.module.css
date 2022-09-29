@@ -6,14 +6,18 @@
 .navigation-bar {
   position: fixed;
   width: 100%;
-  padding: 2rem 10rem;
+  padding: 2rem 0;
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   z-index: 9;
+}
+.navigation-bar-box {
+    max-width: 134rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo-box {
   width: 10%;
@@ -409,8 +413,13 @@
 
 .footer {
     width: 100%;
-    padding: 8rem 10rem;
+    padding: 8rem 0;
     background-color: #40196d;
+}
+
+.footer-box {
+    max-width: 134rem;
+    margin: 0 auto;
 }
 
 .logo-footer-box {

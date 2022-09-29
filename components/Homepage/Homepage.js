@@ -17,33 +17,35 @@ const HomePage = () => {
     <Layout>
       <header className={classes["heading-section"]}>
         <nav className={classes["navigation-bar"]}>
-          <div className={classes["logo-box"]}>
-            <a href="">
-              <Image src={logo} alt="logo" />
-            </a>
+          <div className={classes["navigation-bar-box"]}>
+            <div className={classes["logo-box"]}>
+              <a href="">
+                <Image src={logo} alt="logo" />
+              </a>
+            </div>
+            <ul>
+              <li>
+                <Link href="">Home</Link>
+              </li>
+              <li>
+                <Link href="#features">Features</Link>
+              </li>
+              <li>
+                <Link href="#how-it-works">How it works</Link>
+              </li>
+              <li>
+                <Link href="#pricing">Pricing</Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <Link href="">Log in</Link>
+              </li>
+              <li className={classes["sign-up"]}>
+                <Link href="">Try BETA</Link>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <Link href="">Home</Link>
-            </li>
-            <li>
-              <Link href="#features">Features</Link>
-            </li>
-            <li>
-              <Link href="#how-it-works">How it works</Link>
-            </li>
-            <li>
-              <Link href="#pricing">Pricing</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link href="">Log in</Link>
-            </li>
-            <li className={classes["sign-up"]}>
-              <Link href="">Try BETA</Link>
-            </li>
-          </ul>
         </nav>
         <div className={classes["hero-box"]}>
           <div className={classes["box"]}>
@@ -275,47 +277,69 @@ const HomePage = () => {
         </div>
       </section>
       <footer className={classes["footer"]}>
-      <div className={classes["logo-footer-box"]}>
-              <a href="">
-                <Image src={logoFooter} alt="logo footer" />
-              </a>
+        <div className={classes["footer-box"]}>
+          <div className={classes["logo-footer-box"]}>
+            <a href="">
+              <Image src={logoFooter} alt="logo footer" />
+            </a>
+          </div>
+          <div className={classes["box-footer"]}>
+            <div className={classes["box-1-of-4-footer"]}>
+              <h2>Save time. Get motivated.</h2>
+              <p className={classes["long-copy"]}>
+                In seconds, you can generate contents, writings and material.
+                Utilize the most advanced tool writer to increase traffic and
+                productivity.
+              </p>
+              <p className={classes["copyright"]}>
+                &#169; 2022 Lawyer Up. All rights reserved.
+              </p>
             </div>
-        <div className={classes["box-footer"]}>
-          <div className={classes["box-1-of-4-footer"]}>
-            <h2>Save time. Get motivated.</h2>
-            <p className={classes["long-copy"]}>
-              In seconds, you can generate contents, writings and material.
-              Utilize the most advanced tool writer to increase traffic and
-              productivity.
-            </p>
-            <p className={classes["copyright"]}>
-              &#169; 2022 Lawyer Up. All rights reserved.
-            </p>
-          </div>
-          <div className={classes["box-1-of-4-footer"]}>
-            <h3>Use Cases</h3>
-            <ul>
-                <li><a href="">Notes to Summary</a></li>
-                <li><a href="">Interview Questions</a></li>
-                <li><a href="">Keywords</a></li>
-            </ul>
-          </div>
-          <div className={classes["box-1-of-4-footer"]}>
-            <h3>About</h3>
-            <ul>
-                <li><a href="">Features</a></li>
-                <li><a href="">How It Works</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-          <div className={classes["box-1-of-4-footer"]}>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Log In</a></li>
-                <li><a href="">Sign Up</a></li>
-            </ul>
+            <div className={classes["box-1-of-4-footer"]}>
+              <h3>Use Cases</h3>
+              <ul>
+                <li>
+                  <a href="">Notes to Summary</a>
+                </li>
+                <li>
+                  <a href="">Interview Questions</a>
+                </li>
+                <li>
+                  <a href="">Keywords</a>
+                </li>
+              </ul>
+            </div>
+            <div className={classes["box-1-of-4-footer"]}>
+              <h3>About</h3>
+              <ul>
+                <li>
+                  <a href="">Features</a>
+                </li>
+                <li>
+                  <a href="">How It Works</a>
+                </li>
+                <li>
+                  <a href="">Pricing</a>
+                </li>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div className={classes["box-1-of-4-footer"]}>
+              <h3>Links</h3>
+              <ul>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+                <li>
+                  <a href="">Log In</a>
+                </li>
+                <li>
+                  <a href="">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
