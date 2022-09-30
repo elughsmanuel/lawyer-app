@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
 import logo from "../../assets/logo.png";
 import logoFooter from "../../assets/logo-footer.png";
 import hero from "../../assets/hero.svg";
@@ -15,38 +20,56 @@ import classes from "./Homepage.module.css";
 const HomePage = () => {
   return (
     <Layout>
-      <header className={classes["heading-section"]}>
-        <nav className={classes["navigation-bar"]}>
-          <div className={classes["navigation-bar-box"]}>
-            <div className={classes["logo-box"]}>
-              <a href="">
+      <header className={classes["heading-section"]} id="home">
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          variant="light"
+          fixed="top"
+          className={classes["navbar"]}
+        >
+          <Container className={classes["container"]}>
+            <Navbar.Brand href="#home" className={classes["navbar-logo"]}>
+              <div href="" className={classes["logo-box"]}>
                 <Image src={logo} alt="logo" />
-              </a>
-            </div>
-            <ul>
-              <li>
-                <Link href="">Home</Link>
-              </li>
-              <li>
-                <Link href="#features">Features</Link>
-              </li>
-              <li>
-                <Link href="#how-it-works">How it works</Link>
-              </li>
-              <li>
-                <Link href="#pricing">Pricing</Link>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <Link href="">Log in</Link>
-              </li>
-              <li className={classes["sign-up"]}>
-                <Link href="">Try BETA</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              </div>
+            </Navbar.Brand>
+            <Navbar.Toggle
+              className={classes["navbar-toggle"]}
+              aria-controls="responsive-navbar-nav"
+            />
+            <Navbar.Collapse
+              id="responsive-navbar-nav"
+              className={classes["navbar-collapse"]}
+            >
+              <Nav className="me-auto justify-content-center flex-grow-1">
+                <Nav.Link href="#home" className={classes["navbar-text"]}>
+                  Home
+                </Nav.Link>
+                <Nav.Link href="#features" className={classes["navbar-text"]}>
+                  Features
+                </Nav.Link>
+                <Nav.Link
+                  href="#how-it-works"
+                  className={classes["navbar-text"]}
+                >
+                  How It Works
+                </Nav.Link>
+                <Nav.Link href="#pricing" className={classes["navbar-text"]}>
+                  Pricing
+                </Nav.Link>
+              </Nav>
+              <Nav>
+                <Nav.Link href="#home" className={classes["navbar-text-login"]}>
+                  Log In
+                </Nav.Link>
+                <Nav.Link href="#home" className={classes["navbar-text-signup"]}>
+                  Try BETA
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
         <div className={classes["hero-box"]}>
           <div className={classes["box"]}>
             <div className={classes["box-1-of-2"]}>

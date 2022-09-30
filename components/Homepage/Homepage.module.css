@@ -3,60 +3,64 @@
   height: 100vh;
 }
 
-.navigation-bar {
-  position: fixed;
-  width: 100%;
-  padding: 2rem 0;
+.navbar {
   background-color: #fff;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  z-index: 9;
 }
-.navigation-bar-box {
-  max-width: 134rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+.container {
+  padding: 1rem 0;
   align-items: center;
 }
+
+.navbar-logo {
+  width: 15%;
+}
+
 .logo-box {
-  width: 10%;
+  width: 100%;
 }
 
-.navigation-bar ul {
-  list-style: none;
-}
-
-.navigation-bar ul li {
-  display: inline-block;
-  margin-left: 3rem;
-  transition: all 1s;
-}
-
-.navigation-bar ul li:hover {
-  transform: translateY(-10%);
-}
-
-.navigation-bar ul li a {
+.navbar-text {
   font-size: 1.5rem;
   color: #3d3d3d;
-  text-decoration: none;
+  margin-right: 2rem;
   transition: all 1s;
 }
 
-.navigation-bar ul li a:hover {
+.navbar-text:hover {
   color: #000;
 }
 
-.navigation-bar ul .sign-up a {
-  color: #fff;
-  padding: 1.2rem 3.6rem;
+.navbar-text-login {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+  padding: 1.2rem 0;
+  margin-right: 2rem;
+  transition: all 1s;
+}
+
+.navbar-text-login:hover {
+  color: #000;
+}
+
+
+.navbar-text-signup,
+.navbar-text-signup:link,
+.navbar-text-signup:visited {
+  font-size: 1.5rem;
+  color: #fff !important;
+  font-weight: 300;
+  padding: 1.2rem 0;
+  width: 13rem;
+  text-align: center;
   background-color: #40196d;
   border-radius: 5px;
   transition: all 1s;
 }
 
-.navigation-bar ul .sign-up a:hover {
+.navbar-text-signup:hover,
+.navbar-text-signup:active {
   color: #fff;
   background-color: #2b1049;
 }
@@ -518,8 +522,32 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .logo-box {
-    width: 20%;
+  .navbar-logo {
+    width: 30%;
+  }
+  .navbar-toggle {
+    font-size: 2rem;
+  }
+  .navbar-collapse {
+    height: 100vh;
+    padding: 0 2rem;
+    margin-top: 3rem;
+  }
+  .navbar-text {
+    padding: 1rem 0;
+    border-bottom: 1px solid #b7b7b7;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .navbar-text-login {
+    border-bottom: 1px solid #b7b7b7;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .navbar-text-signup:link,
+  .navbar-text-signup:visited {
+    padding: 1.5rem 0;
+    width: 100%;
   }
   .navigation-bar ul {
     display: none;
@@ -551,12 +579,20 @@
   .how-it-works-box-con {
     padding-right: 2rem;
   }
-  
 }
 
 @media only screen and (max-width: 480px) {
-  .logo-box {
-    width: 15rem;
+  .container {
+    padding: 1rem 2rem;
+  }
+  .navbar-logo {
+    width: 45%;
+  }
+  .navbar-toggle {
+    font-size: 2rem;
+  }
+  .navbar-collapse {
+    padding: 0;
   }
   .heading-main {
     margin-top: 13rem;
