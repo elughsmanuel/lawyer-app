@@ -296,16 +296,16 @@ const HomePage = () => {
               </p>
             </div>
             <div className={classes["box-1-of-4-footer"]}>
-              <h3>Use Cases</h3>
+              <h3>Links</h3>
               <ul>
                 <li>
-                  <a href="">Notes to Summary</a>
+                  <a href="">FAQ</a>
                 </li>
                 <li>
-                  <a href="">Interview Questions</a>
+                  <a href="">Log In</a>
                 </li>
                 <li>
-                  <a href="">Keywords</a>
+                  <a href="">Sign Up</a>
                 </li>
               </ul>
             </div>
@@ -327,16 +327,16 @@ const HomePage = () => {
               </ul>
             </div>
             <div className={classes["box-1-of-4-footer"]}>
-              <h3>Links</h3>
+              <h3>Use Cases</h3>
               <ul>
                 <li>
-                  <a href="">FAQ</a>
+                  <a href="">Notes to Summary</a>
                 </li>
                 <li>
-                  <a href="">Log In</a>
+                  <a href="">Interview Questions</a>
                 </li>
                 <li>
-                  <a href="">Sign Up</a>
+                  <a href="">Keywords</a>
                 </li>
               </ul>
             </div>
