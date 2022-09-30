@@ -30,6 +30,7 @@
 
 .navbar-text:hover {
   color: #000;
+  transform: translateY(-5%);
 }
 
 .navbar-text-login {
@@ -42,6 +43,7 @@
 
 .navbar-text-login:hover {
   color: #000;
+  transform: translateY(-5%);
 }
 
 
@@ -63,6 +65,7 @@
 .navbar-text-signup:active {
   color: #fff;
   background-color: #2b1049;
+  transform: translateY(-5%);
 }
 
 .hero-box {
