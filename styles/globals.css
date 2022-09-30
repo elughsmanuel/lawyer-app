@@ -13,6 +13,10 @@ body {
   font-family: 'Roboto';
 }
 
+ul {
+  padding-left: 0 !important;
+}
+
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 56.25%;
