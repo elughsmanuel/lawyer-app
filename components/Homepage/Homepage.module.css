@@ -532,6 +532,7 @@
     height: 100vh;
     padding: 0 2rem;
     margin-top: 3rem;
+    transition: all .5s ease;
   }
   .navbar-text {
     padding: 1rem 0;
